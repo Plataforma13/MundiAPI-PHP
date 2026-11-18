@@ -51,7 +51,7 @@ class DateTimeHelper
         if (is_null($dates)) {
             return null;
         } else {
-            return array_map('static::toSimpleDate', $dates);
+            return array_map(array(get_called_class(), 'toSimpleDate'), $dates);
         }
     }
 
@@ -85,7 +85,7 @@ class DateTimeHelper
         if (is_null($dates)) {
             return null;
         } else {
-            return array_map('static::fromSimpleDate', $dates);
+            return array_map(array(get_called_class(), 'fromSimpleDate'), $dates);
         }
     }
 
@@ -116,7 +116,7 @@ class DateTimeHelper
         if (is_null($datetimes)) {
             return null;
         } else {
-            return array_map('static::toRfc1123DateTime', $datetimes);
+            return array_map(array(get_called_class(), 'toRfc1123DateTime'), $datetimes);
         }
     }
 
@@ -150,7 +150,7 @@ class DateTimeHelper
         if (is_null($datetimes)) {
             return null;
         } else {
-            return array_map('static::fromRfc1123DateTime', $datetimes);
+            return array_map(array(get_called_class(), 'fromRfc1123DateTime'), $datetimes);
         }
     }
 
@@ -181,7 +181,7 @@ class DateTimeHelper
         if (is_null($datetimes)) {
             return null;
         } else {
-            return array_map('static::toRfc3339DateTime', $datetimes);
+            return array_map(array(get_called_class(), 'toRfc3339DateTime'), $datetimes);
         }
     }
 
@@ -230,7 +230,7 @@ class DateTimeHelper
         if (is_null($datetimes)) {
             return null;
         } else {
-            return array_map('static::fromRfc3339DateTime', $datetimes);
+            return array_map(array(get_called_class(), 'fromRfc3339DateTime'), $datetimes);
         }
     }
 
@@ -256,7 +256,7 @@ class DateTimeHelper
         if (is_null($datetimes)) {
             return null;
         } else {
-            return array_map('static::toUnixTimestamp', $datetimes);
+            return array_map(array(get_called_class(), 'toUnixTimestamp'), $datetimes);
         }
     }
 
@@ -290,7 +290,7 @@ class DateTimeHelper
         if (is_null($datetimes)) {
             return null;
         } else {
-            return array_map('static::fromUnixTimestamp', $datetimes);
+            return array_map(array(get_called_class(), 'fromUnixTimestamp'), $datetimes);
         }
     }
 }
