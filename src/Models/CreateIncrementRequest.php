@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for creating a new increment
  */
+#[\AllowDynamicProperties]
 class CreateIncrementRequest implements JsonSerializable
 {
     /**
@@ -72,6 +73,7 @@ class CreateIncrementRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

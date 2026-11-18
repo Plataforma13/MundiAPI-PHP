@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Response object for geetting an order location request
  */
+#[\AllowDynamicProperties]
 class GetLocationResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class GetLocationResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

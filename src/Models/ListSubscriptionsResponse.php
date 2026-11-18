@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Response object for listing subscriptions
  */
+#[\AllowDynamicProperties]
 class ListSubscriptionsResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class ListSubscriptionsResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for creating a transfer
  */
+#[\AllowDynamicProperties]
 class CreateTransferRequest implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class CreateTransferRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *The ApplePay header request
  */
+#[\AllowDynamicProperties]
 class CreateApplePayHeaderRequest implements JsonSerializable
 {
     /**
@@ -55,6 +56,7 @@ class CreateApplePayHeaderRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

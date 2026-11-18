@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *The card payment token request
  */
+#[\AllowDynamicProperties]
 class CreateCardPaymentTokenRequest implements JsonSerializable
 {
     /**
@@ -56,6 +57,7 @@ class CreateCardPaymentTokenRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

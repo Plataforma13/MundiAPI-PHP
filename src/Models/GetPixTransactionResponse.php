@@ -16,6 +16,7 @@ use MundiAPILib\Utils\DateTimeHelper;
  * @discriminator transaction_type
  * @discriminatorType pix
  */
+#[\AllowDynamicProperties]
 class GetPixTransactionResponse extends GetTransactionResponse implements JsonSerializable
 {
     /**
@@ -72,6 +73,7 @@ class GetPixTransactionResponse extends GetTransactionResponse implements JsonSe
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

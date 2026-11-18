@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for canceling a subscription
  */
+#[\AllowDynamicProperties]
 class CreateCancelSubscriptionRequest implements JsonSerializable
 {
     /**
@@ -43,6 +44,7 @@ class CreateCancelSubscriptionRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

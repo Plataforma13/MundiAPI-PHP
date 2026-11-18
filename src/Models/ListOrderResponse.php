@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Response object for listing order objects
  */
+#[\AllowDynamicProperties]
 class ListOrderResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class ListOrderResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

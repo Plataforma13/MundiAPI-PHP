@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Shipping data
  */
+#[\AllowDynamicProperties]
 class CreateShippingRequest implements JsonSerializable
 {
     /**
@@ -114,6 +115,7 @@ class CreateShippingRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

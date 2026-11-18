@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Response object for listing cards
  */
+#[\AllowDynamicProperties]
 class ListCardsResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class ListCardsResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

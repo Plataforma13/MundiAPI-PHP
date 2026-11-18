@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for capturing a charge
  */
+#[\AllowDynamicProperties]
 class CreateCaptureChargeRequest implements JsonSerializable
 {
     /**
@@ -62,6 +63,7 @@ class CreateCaptureChargeRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

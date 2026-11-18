@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Response object for getting an order item
  */
+#[\AllowDynamicProperties]
 class GetOrderItemResponse implements JsonSerializable
 {
     /**
@@ -90,6 +91,7 @@ class GetOrderItemResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

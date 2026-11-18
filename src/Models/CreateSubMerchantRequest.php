@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *SubMerchant
  */
+#[\AllowDynamicProperties]
 class CreateSubMerchantRequest implements JsonSerializable
 {
     /**
@@ -101,6 +102,7 @@ class CreateSubMerchantRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

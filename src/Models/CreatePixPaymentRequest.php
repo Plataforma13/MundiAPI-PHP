@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Contains information to create a pix payment
  */
+#[\AllowDynamicProperties]
 class CreatePixPaymentRequest implements JsonSerializable
 {
     /**
@@ -56,6 +57,7 @@ class CreatePixPaymentRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

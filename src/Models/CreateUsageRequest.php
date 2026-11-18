@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Request for creating a usage
  */
+#[\AllowDynamicProperties]
 class CreateUsageRequest implements JsonSerializable
 {
     /**
@@ -81,6 +82,7 @@ class CreateUsageRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

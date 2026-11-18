@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Informações de transferência do recebedor
  */
+#[\AllowDynamicProperties]
 class CreateTransferSettingsRequest implements JsonSerializable
 {
     /**
@@ -57,6 +58,7 @@ class CreateTransferSettingsRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

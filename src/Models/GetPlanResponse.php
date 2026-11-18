@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Response object for getting a plan
  */
+#[\AllowDynamicProperties]
 class GetPlanResponse implements JsonSerializable
 {
     /**
@@ -227,6 +228,7 @@ class GetPlanResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

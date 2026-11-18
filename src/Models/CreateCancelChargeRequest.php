@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for canceling a charge.
  */
+#[\AllowDynamicProperties]
 class CreateCancelChargeRequest implements JsonSerializable
 {
     /**
@@ -62,6 +63,7 @@ class CreateCancelChargeRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

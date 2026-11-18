@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for updating card data
  */
+#[\AllowDynamicProperties]
 class UpdateChargeCardRequest implements JsonSerializable
 {
     /**
@@ -65,6 +66,7 @@ class UpdateChargeCardRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

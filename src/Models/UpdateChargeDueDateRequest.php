@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Request for updating a charge due date
  */
+#[\AllowDynamicProperties]
 class UpdateChargeDueDateRequest implements JsonSerializable
 {
     /**
@@ -38,6 +39,7 @@ class UpdateChargeDueDateRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

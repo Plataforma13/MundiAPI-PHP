@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Split
  */
+#[\AllowDynamicProperties]
 class CreateSplitRequest implements JsonSerializable
 {
     /**
@@ -63,6 +64,7 @@ class CreateSplitRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

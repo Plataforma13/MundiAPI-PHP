@@ -16,6 +16,7 @@ use MundiAPILib\Utils\DateTimeHelper;
  * @discriminator transaction_type
  * @discriminatorType boleto
  */
+#[\AllowDynamicProperties]
 class GetBoletoTransactionResponse extends GetTransactionResponse implements JsonSerializable
 {
     /**
@@ -184,6 +185,7 @@ class GetBoletoTransactionResponse extends GetTransactionResponse implements Jso
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

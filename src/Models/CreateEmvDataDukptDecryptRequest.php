@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  * @todo Write general description for this model
  */
+#[\AllowDynamicProperties]
 class CreateEmvDataDukptDecryptRequest implements JsonSerializable
 {
     /**
@@ -36,6 +37,7 @@ class CreateEmvDataDukptDecryptRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Pix Additional Information
  */
+#[\AllowDynamicProperties]
 class PixAdditionalInformation implements JsonSerializable
 {
     /**
@@ -47,6 +48,7 @@ class PixAdditionalInformation implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

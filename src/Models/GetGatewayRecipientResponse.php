@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Information about the recipient on the gateway
  */
+#[\AllowDynamicProperties]
 class GetGatewayRecipientResponse implements JsonSerializable
 {
     /**
@@ -74,6 +75,7 @@ class GetGatewayRecipientResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

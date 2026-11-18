@@ -15,6 +15,7 @@ use JsonSerializable;
  * @discriminator transaction_type
  * @discriminatorType credit_card
  */
+#[\AllowDynamicProperties]
 class GetCreditCardTransactionResponse extends GetTransactionResponse implements JsonSerializable
 {
     /**
@@ -147,6 +148,7 @@ class GetCreditCardTransactionResponse extends GetTransactionResponse implements
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

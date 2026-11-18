@@ -16,6 +16,7 @@ use MundiAPILib\Utils\DateTimeHelper;
  * @discriminator transaction_type
  * @discriminatorType safetypay
  */
+#[\AllowDynamicProperties]
 class GetSafetyPayTransactionResponse extends GetTransactionResponse implements JsonSerializable
 {
     /**
@@ -69,6 +70,7 @@ class GetSafetyPayTransactionResponse extends GetTransactionResponse implements 
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

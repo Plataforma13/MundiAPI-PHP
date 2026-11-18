@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Response object for getting a credit card
  */
+#[\AllowDynamicProperties]
 class GetCardResponse implements JsonSerializable
 {
     /**
@@ -192,6 +193,7 @@ class GetCardResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

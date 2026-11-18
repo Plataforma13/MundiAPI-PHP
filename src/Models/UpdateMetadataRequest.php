@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for updating an metadata
  */
+#[\AllowDynamicProperties]
 class UpdateMetadataRequest implements JsonSerializable
 {
     /**
@@ -36,6 +37,7 @@ class UpdateMetadataRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

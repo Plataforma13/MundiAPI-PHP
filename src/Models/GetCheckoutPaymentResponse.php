@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Resposta das configurações de pagamento do checkout
  */
+#[\AllowDynamicProperties]
 class GetCheckoutPaymentResponse implements JsonSerializable
 {
     /**
@@ -288,6 +289,7 @@ class GetCheckoutPaymentResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

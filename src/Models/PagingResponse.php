@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Object used for returning lists of objects with pagination
  */
+#[\AllowDynamicProperties]
 class PagingResponse implements JsonSerializable
 {
     /**
@@ -54,6 +55,7 @@ class PagingResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();
