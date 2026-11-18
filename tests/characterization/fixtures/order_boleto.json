@@ -1,0 +1,113 @@
+{
+  "id": "or_Bol3t0XnkT0eU88q",
+  "code": "9100002",
+  "amount": 89900,
+  "currency": "BRL",
+  "closed": true,
+  "items": [
+    {
+      "id": "oi_BoletoItem000001",
+      "type": "product",
+      "description": "Ida:ZX98YW ",
+      "amount": 89900,
+      "quantity": 1,
+      "status": "active",
+      "created_at": "2026-11-18T16:51:00Z",
+      "updated_at": "2026-11-18T16:51:00Z",
+      "code": "9100002-AUTHORIZATION-hml"
+    }
+  ],
+  "customer": {
+    "id": "cus_Boleto0000000001",
+    "name": "Maria Antônia de Sá",
+    "email": "maria.teste@example.com",
+    "document": "00000000272",
+    "type": "individual",
+    "delinquent": false,
+    "address": {
+      "id": "addr_Boleto00000001",
+      "street": "Rua dos Goitacazes",
+      "number": "15",
+      "complement": "",
+      "zip_code": "30190050",
+      "neighborhood": "Centro",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "country": "BR",
+      "status": "active",
+      "created_at": "2026-11-18T16:51:00Z",
+      "updated_at": "2026-11-18T16:51:00Z"
+    },
+    "created_at": "2026-11-18T16:51:00Z",
+    "updated_at": "2026-11-18T16:51:00Z",
+    "phones": {
+      "home_phone": {
+        "country_code": "55",
+        "number": "988880000",
+        "area_code": "31"
+      }
+    }
+  },
+  "status": "pending",
+  "created_at": "2026-11-18T16:51:00Z",
+  "updated_at": "2026-11-18T16:51:00Z",
+  "closed_at": "2026-11-18T16:51:00Z",
+  "charges": [
+    {
+      "id": "ch_Boleto0000000001",
+      "code": "9100002",
+      "gateway_id": "5f0b9a52-1111-4d77-b7ac-000000000003",
+      "amount": 89900,
+      "status": "pending",
+      "currency": "BRL",
+      "payment_method": "boleto",
+      "due_at": "2026-11-21T02:59:59Z",
+      "created_at": "2026-11-18T16:51:00Z",
+      "updated_at": "2026-11-18T16:51:00Z",
+      "customer": {
+        "id": "cus_Boleto0000000001",
+        "name": "Maria Antônia de Sá",
+        "email": "maria.teste@example.com",
+        "document": "00000000272",
+        "type": "individual",
+        "delinquent": false,
+        "created_at": "2026-11-18T16:51:00Z",
+        "updated_at": "2026-11-18T16:51:00Z",
+        "phones": {}
+      },
+      "last_transaction": {
+        "id": "tran_Boleto00000001",
+        "transaction_type": "boleto",
+        "gateway_id": "9a3c1d7e-2222-4f10-a1b2-000000000004",
+        "amount": 89900,
+        "status": "generated",
+        "success": true,
+        "url": "https://api.mundipagg.test/core/v1/transactions/tran_Boleto00000001/boleto",
+        "pdf": "https://api.mundipagg.test/core/v1/transactions/tran_Boleto00000001/pdf",
+        "line": "00190.00009 02802.585004 00000.123172 9 12340000089900",
+        "barcode": "https://api.mundipagg.test/core/v1/transactions/tran_Boleto00000001/barcode",
+        "qr_code": "https://api.mundipagg.test/core/v1/transactions/tran_Boleto00000001/qrcode",
+        "nosso_numero": "00028025850000000123",
+        "bank": "001",
+        "document_number": "9100002",
+        "instructions": "Não receber após o vencimento. Pagável em qualquer banco.",
+        "due_at": "2026-11-21T02:59:59Z",
+        "type": "DM",
+        "created_at": "2026-11-18T16:51:00Z",
+        "updated_at": "2026-11-18T16:51:00Z",
+        "gateway_response": {
+          "code": "200"
+        },
+        "antifraud_response": {},
+        "metadata": {}
+      },
+      "metadata": {
+        "billet_code": "777001"
+      }
+    }
+  ],
+  "checkouts": [],
+  "metadata": {
+    "billet_code": "777001"
+  }
+}

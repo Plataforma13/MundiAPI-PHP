@@ -1,0 +1,79 @@
+{
+    "id": "ch_K2rJ5nlHwTE4qRDP",
+    "code": "9100001",
+    "gateway_id": "2c7c5a1f-55b5-4b1d-9e0a-000000000001",
+    "amount": 154990,
+    "status": "pending",
+    "currency": "BRL",
+    "payment_method": "credit_card",
+    "created_at": "2026-11-18T16:50:00Z",
+    "updated_at": "2026-11-18T16:55:00Z",
+    "customer": {
+        "id": "cus_4lW3bDXi0KT9Qzmo",
+        "name": "João da Conceição Araújo",
+        "email": "joao.teste@example.com",
+        "document": "00000000191",
+        "type": "individual",
+        "delinquent": false,
+        "created_at": "2026-11-18T16:50:00Z",
+        "updated_at": "2026-11-18T16:50:00Z",
+        "phones": {
+            "home_phone": {
+                "country_code": "55",
+                "number": "999990000",
+                "area_code": "31"
+            }
+        }
+    },
+    "order": {
+        "id": "or_56GXnk6T0eU88qMm",
+        "code": "9100001",
+        "amount": 154990,
+        "closed": true,
+        "created_at": "2026-11-18T16:50:00Z",
+        "updated_at": "2026-11-18T16:50:01Z",
+        "closed_at": "2026-11-18T16:50:00Z",
+        "currency": "BRL",
+        "status": "paid",
+        "customer_id": "cus_4lW3bDXi0KT9Qzmo"
+    },
+    "last_transaction": {
+        "id": "tran_bRPNY2WSEXfmpWZ6",
+        "transaction_type": "credit_card",
+        "gateway_id": "8b1d4c2e-7a0f-4a0c-8d53-000000000031",
+        "amount": 154990,
+        "status": "authorized_pending_capture",
+        "success": true,
+        "installments": 3,
+        "statement_descriptor": "LOJA TESTE",
+        "acquirer_name": "simulator",
+        "acquirer_affiliation_code": "",
+        "acquirer_tid": "TID0000000001",
+        "acquirer_nsu": "000123",
+        "acquirer_auth_code": "A1B2C3",
+        "acquirer_message": "Simulator|Transação de simulação autorizada com sucesso",
+        "acquirer_return_code": "00",
+        "operation_type": "auth_only",
+        "card": {
+            "id": "card_J26O3K3hvPc2ol7p",
+            "first_six_digits": "400000",
+            "last_four_digits": "0010",
+            "brand": "Visa",
+            "holder_name": "JOAO C ARAUJO",
+            "exp_month": 12,
+            "exp_year": 2030,
+            "status": "active",
+            "type": "credit",
+            "created_at": "2026-11-18T16:50:00Z",
+            "updated_at": "2026-11-18T16:50:00Z"
+        },
+        "created_at": "2026-11-18T16:50:00Z",
+        "updated_at": "2026-11-18T16:50:00Z",
+        "gateway_response": {
+            "code": "200",
+            "errors": []
+        },
+        "antifraud_response": {},
+        "metadata": {}
+    }
+}

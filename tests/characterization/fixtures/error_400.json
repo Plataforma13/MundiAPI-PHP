@@ -1,0 +1,38 @@
+{
+  "message": "The request is invalid.",
+  "errors": {
+    "order.customer.document": [
+      "The document field is not a valid CPF or CNPJ."
+    ],
+    "order.payments[0].credit_card.card.number": [
+      "The number field is not a valid card number"
+    ]
+  },
+  "request": {
+    "items": [
+      {
+        "amount": 154990,
+        "description": "Ida:AB12CD Volta:EF34GH",
+        "quantity": 1,
+        "code": "9100001-AUTHORIZATION-hml"
+      }
+    ],
+    "customer": {
+      "name": "João da Conceição Araújo",
+      "email": "joao.teste@example.com",
+      "document": "123",
+      "type": "individual"
+    },
+    "payments": [
+      {
+        "payment_method": "credit_card",
+        "credit_card": {
+          "installments": 3,
+          "capture": false
+        }
+      }
+    ],
+    "code": "9100001",
+    "currency": "BRL"
+  }
+}

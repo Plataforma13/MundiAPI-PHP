@@ -1,0 +1,63 @@
+{
+    "id": "ch_SafetyBoleto0001",
+    "code": "9100005",
+    "gateway_id": "0f2f6d1c-3333-4c55-9a77-000000000024",
+    "amount": 100000,
+    "status": "pending",
+    "currency": "BRL",
+    "payment_method": "boleto",
+    "due_at": "2026-12-18T02:59:59Z",
+    "created_at": "2026-11-18T16:53:00Z",
+    "updated_at": "2026-11-18T16:53:00Z",
+    "last_transaction": {
+        "id": "tran_SafetyBoleto001",
+        "transaction_type": "boleto",
+        "gateway_id": "0f2f6d1c-3333-4c55-9a77-000000000025",
+        "amount": 100000,
+        "status": "generated",
+        "success": true,
+        "url": "https://api.mundipagg.test/core/v1/transactions/tran_SafetyBoleto001/boleto",
+        "pdf": "https://api.mundipagg.test/core/v1/transactions/tran_SafetyBoleto001/pdf",
+        "line": "23790.00009 02802.585004 00000.789172 9 12340000100000",
+        "barcode": "https://api.mundipagg.test/core/v1/transactions/tran_SafetyBoleto001/barcode",
+        "qr_code": "https://api.mundipagg.test/core/v1/transactions/tran_SafetyBoleto001/qrcode",
+        "nosso_numero": "00000000789",
+        "bank": "237",
+        "document_number": "777005",
+        "instructions": "Parcela 2 de 6",
+        "due_at": "2026-12-18T02:59:59Z",
+        "created_at": "2026-11-18T16:53:00Z",
+        "updated_at": "2026-11-18T16:53:00Z",
+        "gateway_response": {
+            "code": "200",
+            "errors": []
+        },
+        "antifraud_response": {},
+        "metadata": {}
+    },
+    "metadata": {
+        "billet_code": "777005"
+    },
+    "order": {
+        "id": "or_Saf3tyXnk6T0eU88",
+        "code": "9100005",
+        "amount": 120000,
+        "closed": true,
+        "created_at": "2026-11-18T16:53:00Z",
+        "updated_at": "2026-11-18T16:53:00Z",
+        "currency": "BRL",
+        "status": "pending",
+        "customer_id": "cus_Safety000000001"
+    },
+    "customer": {
+        "id": "cus_Safety000000001",
+        "name": "Pedro Antônio",
+        "email": "pedro.teste@example.com",
+        "document": "00000000515",
+        "type": "individual",
+        "delinquent": false,
+        "created_at": "2026-11-18T16:53:00Z",
+        "updated_at": "2026-11-18T16:53:00Z",
+        "phones": {}
+    }
+}
