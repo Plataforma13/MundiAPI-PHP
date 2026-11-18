@@ -4,7 +4,7 @@ Mundipagg API
 
 ## Fork Plataforma13: compatibilidade com PHP
 
-Este fork roda de PHP 7.0 a PHP 8.4 com o mesmo código e as mesmas dependências
+Este fork roda de PHP 7.0 a PHP 8.5 com o mesmo código e as mesmas dependências
 (`apimatic/unirest-php` 2.3 e `apimatic/jsonmapper` 1.3.1). A equivalência de
 comportamento com a `3.1.18` é verificada pelo harness em
 [tests/characterization](tests/characterization/README.md).

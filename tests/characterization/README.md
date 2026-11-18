@@ -2,7 +2,7 @@
 
 Prova que uma versão do SDK se comporta igual a outra: mesma request na rede,
 mesmo objeto de resposta mapeado e mesma exceção. Foi criado para a adequação
-ao PHP 8.4, comparando a `3.1.18` em PHP 7.0 com o código novo em PHP 8.4.
+ao PHP 8.x, comparando a `3.1.18` em PHP 7.0 com o código novo em PHP 8.4 e 8.5.
 
 Tudo roda contra servidores locais em `127.0.0.1`. Nada aqui chama a API real
 da Mundipagg/Pagar.me e nenhuma credencial é verdadeira.
