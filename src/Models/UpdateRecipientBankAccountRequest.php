@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Updates the default bank account for a recipient
  */
+#[\AllowDynamicProperties]
 class UpdateRecipientBankAccountRequest implements JsonSerializable
 {
     /**
@@ -37,6 +38,7 @@ class UpdateRecipientBankAccountRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Contains the settings for creating a boleto payment
  */
+#[\AllowDynamicProperties]
 class CreateBoletoPaymentRequest implements JsonSerializable
 {
     /**
@@ -113,6 +114,7 @@ class CreateBoletoPaymentRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

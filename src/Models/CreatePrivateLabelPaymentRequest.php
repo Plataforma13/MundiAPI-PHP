@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *The settings for creating a private label payment
  */
+#[\AllowDynamicProperties]
 class CreatePrivateLabelPaymentRequest implements JsonSerializable
 {
     /**
@@ -111,6 +112,7 @@ class CreatePrivateLabelPaymentRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for creating a device
  */
+#[\AllowDynamicProperties]
 class CreateDeviceRequest implements JsonSerializable
 {
     /**
@@ -35,6 +36,7 @@ class CreateDeviceRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

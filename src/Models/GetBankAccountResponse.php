@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  * @todo Write general description for this model
  */
+#[\AllowDynamicProperties]
 class GetBankAccountResponse implements JsonSerializable
 {
     /**
@@ -174,6 +175,7 @@ class GetBankAccountResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

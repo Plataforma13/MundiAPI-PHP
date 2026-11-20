@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  * @todo Write general description for this model
  */
+#[\AllowDynamicProperties]
 class GetTransferSourceResponse implements JsonSerializable
 {
     /**
@@ -46,6 +47,7 @@ class GetTransferSourceResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

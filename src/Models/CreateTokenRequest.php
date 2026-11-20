@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Token data
  */
+#[\AllowDynamicProperties]
 class CreateTokenRequest implements JsonSerializable
 {
     /**
@@ -51,6 +52,7 @@ class CreateTokenRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

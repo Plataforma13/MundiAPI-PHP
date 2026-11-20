@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Payment Authentication response
  */
+#[\AllowDynamicProperties]
 class GetPaymentAuthenticationResponse implements JsonSerializable
 {
     /**
@@ -46,6 +47,7 @@ class GetPaymentAuthenticationResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

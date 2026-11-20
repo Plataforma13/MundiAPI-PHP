@@ -15,6 +15,7 @@ use JsonSerializable;
  * @discriminator transaction_type
  * @discriminatorType private_label
  */
+#[\AllowDynamicProperties]
 class GetPrivateLabelTransactionResponse extends GetTransactionResponse implements JsonSerializable
 {
     /**
@@ -137,6 +138,7 @@ class GetPrivateLabelTransactionResponse extends GetTransactionResponse implemen
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -43,12 +43,34 @@ class HttpRequest
      * @param string     $queryUrl   Query url
      * @param array|null $parameters Map of parameters sent
      */
-    public function __construct($httpMethod = null, array $headers = null, $queryUrl = null, array $parameters = null)
+    public function __construct($httpMethod = null, $headers = null, $queryUrl = null, $parameters = null)
     {
+        // "array $x = null" is deprecated since PHP 8.4 and "?array" needs PHP 7.1,
+        // so the array-or-null contract is enforced here instead of in the signature
+        if ($headers !== null && !is_array($headers)) {
+            throw self::typeError('$headers');
+        }
+        if ($parameters !== null && !is_array($parameters)) {
+            throw self::typeError('$parameters');
+        }
+
         $this->httpMethod = $httpMethod;
         $this->headers = $headers;
         $this->queryUrl = $queryUrl;
         $this->parameters = $parameters;
+    }
+
+    /**
+     * Error for an argument that is neither an array nor null: the TypeError
+     * the former "array" type declaration raised (PHP 7+)
+     * @param string $argument Argument name
+     * @return \Throwable|\Exception
+     */
+    private static function typeError($argument)
+    {
+        $message = 'Argument ' . $argument . ' passed to ' . __CLASS__ . '::__construct() must be of the type array or null';
+
+        return class_exists('TypeError') ? new \TypeError($message) : new \InvalidArgumentException($message);
     }
 
     /**

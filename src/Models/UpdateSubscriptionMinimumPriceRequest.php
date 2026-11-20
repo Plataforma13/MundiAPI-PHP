@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Atualização do valor mínimo da assinatura
  */
+#[\AllowDynamicProperties]
 class UpdateSubscriptionMinimumPriceRequest implements JsonSerializable
 {
     /**
@@ -36,6 +37,7 @@ class UpdateSubscriptionMinimumPriceRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

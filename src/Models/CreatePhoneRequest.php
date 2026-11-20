@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  * @todo Write general description for this model
  */
+#[\AllowDynamicProperties]
 class CreatePhoneRequest implements JsonSerializable
 {
     /**
@@ -53,6 +54,7 @@ class CreatePhoneRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

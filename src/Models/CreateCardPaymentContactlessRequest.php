@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *The card payment contactless request
  */
+#[\AllowDynamicProperties]
 class CreateCardPaymentContactlessRequest implements JsonSerializable
 {
     /**
@@ -62,6 +63,7 @@ class CreateCardPaymentContactlessRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

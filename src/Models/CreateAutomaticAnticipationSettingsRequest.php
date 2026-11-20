@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  * @todo Write general description for this model
  */
+#[\AllowDynamicProperties]
 class CreateAutomaticAnticipationSettingsRequest implements JsonSerializable
 {
     /**
@@ -73,6 +74,7 @@ class CreateAutomaticAnticipationSettingsRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Response object for getting a price bracket
  */
+#[\AllowDynamicProperties]
 class GetPriceBracketResponse implements JsonSerializable
 {
     /**
@@ -64,6 +65,7 @@ class GetPriceBracketResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -1,0 +1,96 @@
+{
+  "id": "or_P1xXnk6T0eU88qMm",
+  "code": "9100003",
+  "amount": 45050,
+  "currency": "BRL",
+  "closed": true,
+  "items": [
+    {
+      "id": "oi_PixItem000000001",
+      "type": "product",
+      "description": "Ida:PIX001 Volta:PIX002",
+      "amount": 45050,
+      "quantity": 1,
+      "status": "active",
+      "created_at": "2026-11-18T16:52:00.123Z",
+      "updated_at": "2026-11-18T16:52:00.123456Z",
+      "code": "9100003-AUTHORIZATION-hml"
+    }
+  ],
+  "customer": {
+    "id": "cus_Pix000000000001",
+    "name": "José Müller",
+    "email": "jose.teste@example.com",
+    "document": "00000000353",
+    "type": "individual",
+    "delinquent": false,
+    "created_at": "2026-11-18T16:52:00Z",
+    "updated_at": "2026-11-18T16:52:00Z",
+    "phones": {
+      "home_phone": {
+        "country_code": "55",
+        "number": "977770000",
+        "area_code": "11"
+      },
+      "mobile_phone": {
+        "country_code": "55",
+        "number": "977770000",
+        "area_code": "11"
+      }
+    },
+    "metadata": {}
+  },
+  "status": "pending",
+  "created_at": "2026-11-18T16:52:00Z",
+  "updated_at": "2026-11-18T16:52:00Z",
+  "closed_at": "2026-11-18T16:52:00Z",
+  "ip": "203.0.113.10",
+  "session_id": "sess_abc123",
+  "charges": [
+    {
+      "id": "ch_Pix0000000000001",
+      "code": "9100003",
+      "gateway_id": "3306571",
+      "amount": 45050,
+      "status": "pending",
+      "currency": "BRL",
+      "payment_method": "pix",
+      "created_at": "2026-11-18T16:52:00Z",
+      "updated_at": "2026-11-18T16:52:00Z",
+      "customer": {
+        "id": "cus_Pix000000000001",
+        "name": "José Müller",
+        "email": "jose.teste@example.com",
+        "document": "00000000353",
+        "type": "individual",
+        "delinquent": false,
+        "created_at": "2026-11-18T16:52:00Z",
+        "updated_at": "2026-11-18T16:52:00Z",
+        "phones": {}
+      },
+      "last_transaction": {
+        "id": "tran_Pix00000000001",
+        "transaction_type": "pix",
+        "gateway_id": "3306571",
+        "amount": 45050,
+        "status": "waiting_payment",
+        "success": true,
+        "qr_code": "00020101021226820014br.gov.bcb.pix2560pix.example.test/qr/v2/00000000-0000-0000-0000-0000000000015204000053039865802BR5913Loja de Teste6009SAO PAULO62070503***6304ABCD",
+        "qr_code_url": "https://api.mundipagg.test/core/v1/transactions/tran_Pix00000000001/qrcode?payment_method=pix",
+        "expires_at": "2026-11-18T17:22:00Z",
+        "additional_information": [
+          {
+            "name": "Pedido",
+            "value": "9100003"
+          }
+        ],
+        "created_at": "2026-11-18T16:52:00Z",
+        "updated_at": "2026-11-18T16:52:00Z",
+        "gateway_response": {},
+        "antifraud_response": {},
+        "metadata": {}
+      }
+    }
+  ],
+  "checkouts": []
+}

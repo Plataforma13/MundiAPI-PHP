@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Checkout card payment request
  */
+#[\AllowDynamicProperties]
 class CreateCheckoutCreditCardPaymentRequest implements JsonSerializable
 {
     /**
@@ -61,6 +62,7 @@ class CreateCheckoutCreditCardPaymentRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Creates a 3D-S authentication payment
  */
+#[\AllowDynamicProperties]
 class CreateThreeDSecureRequest implements JsonSerializable
 {
     /**
@@ -87,6 +88,7 @@ class CreateThreeDSecureRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

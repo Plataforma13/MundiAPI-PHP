@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Anticipation limits
  */
+#[\AllowDynamicProperties]
 class GetAnticipationLimitsResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class GetAnticipationLimitsResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

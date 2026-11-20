@@ -1,0 +1,20 @@
+{
+  "message": "The request is invalid.",
+  "errors": {
+    "charge.payment.boleto.due_at": [
+      "The due_at field must be a future date.",
+      "O vencimento informado é inválido."
+    ]
+  },
+  "request": {
+    "amount": 100000,
+    "order_id": "or_Saf3tyXnk6T0eU88",
+    "payment": {
+      "payment_method": "boleto",
+      "boleto": {
+        "bank": "237",
+        "due_at": "2020-01-01T00:00:00Z"
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *List of paginated transfer objects
  */
+#[\AllowDynamicProperties]
 class ListTransferResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class ListTransferResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

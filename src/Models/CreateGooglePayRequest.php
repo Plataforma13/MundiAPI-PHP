@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *The GooglePay Token Payment Request
  */
+#[\AllowDynamicProperties]
 class CreateGooglePayRequest implements JsonSerializable
 {
     /**
@@ -73,6 +74,7 @@ class CreateGooglePayRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

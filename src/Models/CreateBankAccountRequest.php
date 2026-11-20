@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for creating a bank account
  */
+#[\AllowDynamicProperties]
 class CreateBankAccountRequest implements JsonSerializable
 {
     /**
@@ -124,6 +125,7 @@ class CreateBankAccountRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

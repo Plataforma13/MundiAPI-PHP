@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for updating the card from a subscription
  */
+#[\AllowDynamicProperties]
 class UpdateSubscriptionCardRequest implements JsonSerializable
 {
     /**
@@ -46,6 +47,7 @@ class UpdateSubscriptionCardRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

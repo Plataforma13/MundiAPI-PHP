@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Split response
  */
+#[\AllowDynamicProperties]
 class GetSplitResponse implements JsonSerializable
 {
     /**
@@ -71,6 +72,7 @@ class GetSplitResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

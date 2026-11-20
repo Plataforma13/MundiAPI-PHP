@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Creates a refund with split rules
  */
+#[\AllowDynamicProperties]
 class CreateCancelChargeSplitRulesRequest implements JsonSerializable
 {
     /**
@@ -55,6 +56,7 @@ class CreateCancelChargeSplitRulesRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

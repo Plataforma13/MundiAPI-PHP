@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  * @todo Write general description for this model
  */
+#[\AllowDynamicProperties]
 class UpdateTransferSettingsRequest implements JsonSerializable
 {
     /**
@@ -57,6 +58,7 @@ class UpdateTransferSettingsRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

@@ -1,0 +1,141 @@
+{
+  "id": "or_56GXnk6T0eU88qMm",
+  "code": "9100001",
+  "amount": 154990,
+  "currency": "BRL",
+  "closed": true,
+  "items": [
+    {
+      "id": "oi_Y3wMGkWfXsdmWAkJ",
+      "type": "product",
+      "description": "Ida:AB12CD Volta:EF34GH",
+      "amount": 154990,
+      "quantity": 1,
+      "status": "active",
+      "created_at": "2026-11-18T16:50:00Z",
+      "updated_at": "2026-11-18T16:50:00Z",
+      "code": "9100001-AUTHORIZATION-hml"
+    }
+  ],
+  "customer": {
+    "id": "cus_4lW3bDXi0KT9Qzmo",
+    "name": "João da Conceição Araújo",
+    "email": "joao.teste@example.com",
+    "document": "00000000191",
+    "type": "individual",
+    "gender": "male",
+    "delinquent": false,
+    "address": {
+      "id": "addr_bn7Vg25CVqUGzyd0",
+      "street": "Avenida Afonso Pena",
+      "number": "1500",
+      "complement": "Sala 3 / Bloco B",
+      "zip_code": "30130005",
+      "neighborhood": "Centro",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "country": "BR",
+      "status": "active",
+      "line_1": null,
+      "line_2": null,
+      "created_at": "2026-11-18T16:50:00Z",
+      "updated_at": "2026-11-18T16:50:00Z",
+      "metadata": null
+    },
+    "created_at": "2026-11-18T16:50:00Z",
+    "updated_at": "2026-11-18T16:50:00Z",
+    "phones": {
+      "home_phone": {
+        "country_code": "55",
+        "number": "999990000",
+        "area_code": "31"
+      }
+    }
+  },
+  "status": "pending",
+  "created_at": "2026-11-18T16:50:00Z",
+  "updated_at": "2026-11-18T16:50:01Z",
+  "closed_at": "2026-11-18T16:50:00Z",
+  "charges": [
+    {
+      "id": "ch_K2rJ5nlHwTE4qRDP",
+      "code": "9100001",
+      "gateway_id": "2c7c5a1f-55b5-4b1d-9e0a-000000000001",
+      "amount": 154990,
+      "status": "pending",
+      "currency": "BRL",
+      "payment_method": "credit_card",
+      "created_at": "2026-11-18T16:50:00Z",
+      "updated_at": "2026-11-18T16:50:01Z",
+      "customer": {
+        "id": "cus_4lW3bDXi0KT9Qzmo",
+        "name": "João da Conceição Araújo",
+        "email": "joao.teste@example.com",
+        "document": "00000000191",
+        "type": "individual",
+        "delinquent": false,
+        "created_at": "2026-11-18T16:50:00Z",
+        "updated_at": "2026-11-18T16:50:00Z",
+        "phones": {
+          "home_phone": {
+            "country_code": "55",
+            "number": "999990000",
+            "area_code": "31"
+          }
+        }
+      },
+      "last_transaction": {
+        "id": "tran_bRPNY2WSEXfmpWZ6",
+        "transaction_type": "credit_card",
+        "gateway_id": "8b1d4c2e-7a0f-4a0c-8d53-000000000002",
+        "amount": 154990,
+        "status": "authorized_pending_capture",
+        "success": true,
+        "installments": 3,
+        "statement_descriptor": "LOJA TESTE",
+        "acquirer_name": "simulator",
+        "acquirer_affiliation_code": "",
+        "acquirer_tid": "TID0000000001",
+        "acquirer_nsu": "000123",
+        "acquirer_auth_code": "A1B2C3",
+        "acquirer_message": "Simulator|Transação de simulação autorizada com sucesso",
+        "acquirer_return_code": "00",
+        "operation_type": "auth_only",
+        "funding_source": "credit",
+        "card": {
+          "id": "card_J26O3K3hvPc2ol7p",
+          "first_six_digits": "400000",
+          "last_four_digits": "0010",
+          "brand": "Visa",
+          "holder_name": "JOAO C ARAUJO",
+          "exp_month": 12,
+          "exp_year": 2030,
+          "status": "active",
+          "type": "credit",
+          "created_at": "2026-11-18T16:50:00Z",
+          "updated_at": "2026-11-18T16:50:00Z",
+          "billing_address": {
+            "street": "Avenida Afonso Pena",
+            "number": "1500",
+            "complement": "Sala 3 / Bloco B",
+            "zip_code": "30130005",
+            "neighborhood": "Centro",
+            "city": "Belo Horizonte",
+            "state": "MG",
+            "country": "BR"
+          }
+        },
+        "created_at": "2026-11-18T16:50:00Z",
+        "updated_at": "2026-11-18T16:50:00Z",
+        "gateway_response": {
+          "code": "200",
+          "errors": []
+        },
+        "antifraud_response": {},
+        "metadata": {}
+      }
+    }
+  ],
+  "checkouts": [],
+  "metadata": {}
+}

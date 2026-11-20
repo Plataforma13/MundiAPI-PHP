@@ -1,0 +1,366 @@
+{
+  "id": "or_M1xedXnk6T0eU88q",
+  "code": "9100004",
+  "amount": 300000,
+  "currency": "BRL",
+  "closed": false,
+  "items": [
+    {
+      "id": "oi_Mixed00000000001",
+      "type": "product",
+      "description": "Ida:MIX001 Volta:MIX002",
+      "amount": 300000,
+      "quantity": 1,
+      "category": null,
+      "status": "active",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-10T12:00:00Z",
+      "code": "9100004-AUTHORIZATION-hml"
+    }
+  ],
+  "customer": {
+    "id": "cus_Mixed0000000001",
+    "name": "Ana Lúcia Gonçalves",
+    "email": "ana.teste@example.com",
+    "document": "00000000434",
+    "type": "individual",
+    "delinquent": false,
+    "fb_id": null,
+    "fb_access_token": null,
+    "code": "CLI-0042",
+    "address": {
+      "id": "addr_Mixed000000001",
+      "street": "Praça Sete de Setembro",
+      "number": "s/n",
+      "complement": null,
+      "zip_code": "30130010",
+      "neighborhood": "Centro",
+      "city": "Belo Horizonte",
+      "state": "MG",
+      "country": "BR",
+      "status": "active",
+      "line_1": "s/n, Praça Sete de Setembro, Centro",
+      "line_2": "",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-10T12:00:00Z",
+      "deleted_at": null,
+      "metadata": {
+        "origem": "site"
+      }
+    },
+    "created_at": "2026-11-10T12:00:00Z",
+    "updated_at": "2026-11-10T12:00:00Z",
+    "phones": {
+      "home_phone": {
+        "country_code": "55",
+        "number": "966660000",
+        "area_code": "31"
+      },
+      "mobile_phone": null
+    },
+    "metadata": {
+      "vip": true,
+      "pontos": 1250,
+      "tags": ["a", "b"]
+    }
+  },
+  "status": "pending",
+  "created_at": "2026-11-10T12:00:00Z",
+  "updated_at": "2026-11-12T09:30:15Z",
+  "invoice_url": null,
+  "shipping": null,
+  "location": null,
+  "device": null,
+  "ip": null,
+  "session_id": null,
+  "charges": [
+    {
+      "id": "ch_MixedCard0000001",
+      "code": "9100004",
+      "gateway_id": "2c7c5a1f-55b5-4b1d-9e0a-000000000011",
+      "amount": 100000,
+      "paid_amount": 100000,
+      "canceled_amount": 0,
+      "status": "paid",
+      "currency": "BRL",
+      "payment_method": "credit_card",
+      "paid_at": "2026-11-10T12:05:00Z",
+      "canceled_at": null,
+      "due_at": null,
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-10T12:05:00Z",
+      "customer": null,
+      "invoice": null,
+      "order": null,
+      "last_transaction": {
+        "id": "tran_MixedCard000001",
+        "transaction_type": "credit_card",
+        "gateway_id": "8b1d4c2e-7a0f-4a0c-8d53-000000000012",
+        "amount": 100000,
+        "status": "captured",
+        "success": true,
+        "installments": 1,
+        "statement_descriptor": null,
+        "acquirer_name": "simulator",
+        "acquirer_affiliation_code": "123456",
+        "acquirer_tid": "TID0000000011",
+        "acquirer_nsu": "000456",
+        "acquirer_auth_code": "Z9Y8X7",
+        "acquirer_message": "Simulator|Transação de simulação capturada com sucesso",
+        "acquirer_return_code": "00",
+        "operation_type": "capture",
+        "threed_authentication_url": null,
+        "attempt_count": 1,
+        "max_attempts": 1,
+        "next_attempt": null,
+        "splits": [],
+        "split": [],
+        "card": {
+          "id": "card_Mixed000000001",
+          "first_six_digits": "510000",
+          "last_four_digits": "0008",
+          "brand": "Mastercard",
+          "holder_name": "ANA L GONCALVES",
+          "holder_document": null,
+          "exp_month": "7",
+          "exp_year": "2031",
+          "status": "active",
+          "type": "credit",
+          "label": null,
+          "created_at": "2026-11-10T12:00:00Z",
+          "updated_at": "2026-11-10T12:00:00Z",
+          "deleted_at": null,
+          "billing_address": null,
+          "customer": null,
+          "metadata": []
+        },
+        "created_at": "2026-11-10T12:05:00Z",
+        "updated_at": "2026-11-10T12:05:00Z",
+        "gateway_response": {
+          "code": "200",
+          "errors": []
+        },
+        "antifraud_response": {
+          "status": "approved",
+          "return_code": "APR",
+          "return_message": "Aprovado",
+          "provider_name": "pagarme",
+          "score": 12.5
+        },
+        "metadata": null
+      },
+      "metadata": {}
+    },
+    {
+      "id": "ch_MixedBoleto00001",
+      "code": "9100004",
+      "gateway_id": "5f0b9a52-1111-4d77-b7ac-000000000013",
+      "amount": 100000,
+      "paid_amount": 100050,
+      "canceled_amount": 0,
+      "status": "overpaid",
+      "currency": "BRL",
+      "payment_method": "boleto",
+      "due_at": "2026-11-13T02:59:59Z",
+      "paid_at": "2026-11-12T09:30:15.5Z",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-12T09:30:15Z",
+      "last_transaction": {
+        "id": "tran_MixedBoleto0001",
+        "transaction_type": "boleto",
+        "gateway_id": "9a3c1d7e-2222-4f10-a1b2-000000000014",
+        "amount": 100000,
+        "status": "paid",
+        "success": true,
+        "url": "https://api.mundipagg.test/core/v1/transactions/tran_MixedBoleto0001/boleto",
+        "pdf": "https://api.mundipagg.test/core/v1/transactions/tran_MixedBoleto0001/pdf",
+        "pdf_password": null,
+        "line": "00190.00009 02802.585004 00000.456172 9 12340000100000",
+        "barcode": "https://api.mundipagg.test/core/v1/transactions/tran_MixedBoleto0001/barcode",
+        "qr_code": "https://api.mundipagg.test/core/v1/transactions/tran_MixedBoleto0001/qrcode",
+        "nosso_numero": 28025850000000456,
+        "bank": 1,
+        "document_number": 9100004,
+        "instructions": "Não receber após o vencimento",
+        "due_at": "2026-11-13T02:59:59Z",
+        "paid_at": "2026-11-12T09:30:15Z",
+        "paid_amount": 100050,
+        "credit_at": "2026-11-13T03:00:00Z",
+        "type": "DM",
+        "billing_address": {
+          "street": "Praça Sete de Setembro",
+          "number": "s/n",
+          "complement": null,
+          "zip_code": "30130010",
+          "neighborhood": "Centro",
+          "city": "Belo Horizonte",
+          "state": "MG",
+          "country": "BR",
+          "line_1": "s/n, Praça Sete de Setembro, Centro",
+          "line_2": null
+        },
+        "created_at": "2026-11-10T12:00:00Z",
+        "updated_at": "2026-11-12T09:30:15Z",
+        "gateway_response": {
+          "code": "200",
+          "errors": null
+        },
+        "antifraud_response": null,
+        "metadata": {
+          "billet_code": "777004"
+        }
+      },
+      "metadata": {
+        "billet_code": "777004"
+      }
+    },
+    {
+      "id": "ch_MixedPix00000001",
+      "code": "9100004",
+      "gateway_id": "3306599",
+      "amount": 50000,
+      "status": "canceled",
+      "currency": "BRL",
+      "payment_method": "pix",
+      "canceled_at": "2026-11-11T08:00:00Z",
+      "canceled_amount": 50000,
+      "paid_amount": "0",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-11T08:00:00Z",
+      "last_transaction": {
+        "id": "tran_MixedPix0000001",
+        "transaction_type": "pix",
+        "gateway_id": "3306599",
+        "amount": 50000,
+        "status": "pending_refund",
+        "success": "true",
+        "qr_code": "00020101021226820014br.gov.bcb.pix0000MIXED",
+        "qr_code_url": "https://api.mundipagg.test/core/v1/transactions/tran_MixedPix0000001/qrcode",
+        "expires_at": "2026-11-10T12:30:00Z",
+        "additional_information": [
+          {
+            "Name": "Pedido",
+            "Value": "9100004"
+          },
+          {
+            "Name": "Loja",
+            "Value": 123
+          }
+        ],
+        "end_to_end_id": "E0000000020261110120000000000001",
+        "payer": {
+          "name": "Ana Lúcia Gonçalves",
+          "document": "00000000434"
+        },
+        "created_at": "2026-11-11T08:00:00Z",
+        "updated_at": "2026-11-11T08:00:00Z",
+        "gateway_response": {
+          "code": "200",
+          "errors": []
+        },
+        "antifraud_response": {},
+        "metadata": {}
+      },
+      "metadata": []
+    },
+    {
+      "id": "ch_MixedSafety00001",
+      "code": "9100004",
+      "gateway_id": "",
+      "amount": 50000,
+      "status": "failed",
+      "currency": "BRL",
+      "payment_method": "safetypay",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-10T12:00:02Z",
+      "last_transaction": {
+        "id": "tran_MixedSafety0001",
+        "transaction_type": "safetypay",
+        "gateway_id": null,
+        "amount": 50000,
+        "status": "with_error",
+        "success": false,
+        "url": null,
+        "bank_tid": null,
+        "paid_at": null,
+        "paid_amount": null,
+        "created_at": "2026-11-10T12:00:02Z",
+        "updated_at": "2026-11-10T12:00:02Z",
+        "gateway_response": {
+          "code": "400",
+          "errors": [
+            {
+              "message": "O banco emissor não está disponível | Bank unavailable"
+            },
+            {
+              "message": "Tente novamente"
+            }
+          ]
+        },
+        "antifraud_response": {},
+        "metadata": {}
+      }
+    },
+    {
+      "id": "ch_MixedUnknown0001",
+      "code": "9100004",
+      "gateway_id": "x",
+      "amount": 1,
+      "status": "pending",
+      "currency": "BRL",
+      "payment_method": "google_pay",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-10T12:00:00Z",
+      "last_transaction": {
+        "id": "tran_MixedUnknown001",
+        "transaction_type": "google_pay",
+        "gateway_id": "x",
+        "amount": 1,
+        "status": "pending",
+        "success": true,
+        "token": "campo-que-o-sdk-nao-conhece",
+        "created_at": "2026-11-10T12:00:00Z",
+        "updated_at": "2026-11-10T12:00:00Z",
+        "gateway_response": {},
+        "antifraud_response": {}
+      }
+    },
+    {
+      "id": "ch_MixedNoTran00001",
+      "code": "9100004",
+      "gateway_id": "y",
+      "amount": 2,
+      "status": "pending",
+      "currency": "BRL",
+      "payment_method": "boleto",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-10T12:00:00Z",
+      "last_transaction": null
+    },
+    {
+      "id": "ch_MixedNoType00001",
+      "code": "9100004",
+      "gateway_id": "z",
+      "amount": 3,
+      "status": "pending",
+      "currency": "BRL",
+      "payment_method": "voucher",
+      "created_at": "2026-11-10T12:00:00Z",
+      "updated_at": "2026-11-10T12:00:00Z",
+      "last_transaction": {
+        "id": "tran_MixedNoType0001",
+        "gateway_id": "z",
+        "amount": 3,
+        "status": "pending",
+        "success": true,
+        "created_at": "2026-11-10T12:00:00Z",
+        "updated_at": "2026-11-10T12:00:00Z"
+      }
+    }
+  ],
+  "checkouts": null,
+  "metadata": {
+    "canal": "app",
+    "tentativa": 2
+  }
+}

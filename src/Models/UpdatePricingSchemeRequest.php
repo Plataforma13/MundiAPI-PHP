@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for updating a pricing scheme
  */
+#[\AllowDynamicProperties]
 class UpdatePricingSchemeRequest implements JsonSerializable
 {
     /**
@@ -72,6 +73,7 @@ class UpdatePricingSchemeRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

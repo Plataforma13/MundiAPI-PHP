@@ -29,10 +29,32 @@ class HttpCallBack
      * @param callable|null $onBeforeRequest Called before an API call
      * @param callable|null $onAfterRequest  Called after an API call
      */
-    public function __construct(callable $onBeforeRequest = null, callable $onAfterRequest = null)
+    public function __construct($onBeforeRequest = null, $onAfterRequest = null)
     {
+        // "callable $x = null" is deprecated since PHP 8.4 and "?callable" needs PHP 7.1,
+        // so the callable-or-null contract is enforced here instead of in the signature
+        if ($onBeforeRequest !== null && !is_callable($onBeforeRequest)) {
+            throw self::typeError('$onBeforeRequest');
+        }
+        if ($onAfterRequest !== null && !is_callable($onAfterRequest)) {
+            throw self::typeError('$onAfterRequest');
+        }
+
         $this->onBeforeRequest = $onBeforeRequest;
         $this->onAfterRequest = $onAfterRequest;
+    }
+
+    /**
+     * Error for an argument that is neither callable nor null: the TypeError
+     * the former "callable" type declaration raised (PHP 7+)
+     * @param string $argument Argument name
+     * @return \Throwable|\Exception
+     */
+    private static function typeError($argument)
+    {
+        $message = 'Argument ' . $argument . ' passed to ' . __CLASS__ . '::__construct() must be callable or null';
+
+        return class_exists('TypeError') ? new \TypeError($message) : new \InvalidArgumentException($message);
     }
 
     /**

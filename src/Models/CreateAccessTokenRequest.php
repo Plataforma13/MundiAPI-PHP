@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for creating a new Access Token
  */
+#[\AllowDynamicProperties]
 class CreateAccessTokenRequest implements JsonSerializable
 {
     /**
@@ -36,6 +37,7 @@ class CreateAccessTokenRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

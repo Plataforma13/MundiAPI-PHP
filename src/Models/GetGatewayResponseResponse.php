@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *The Transaction Gateway Response
  */
+#[\AllowDynamicProperties]
 class GetGatewayResponseResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class GetGatewayResponseResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

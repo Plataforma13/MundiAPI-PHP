@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Response object for listing invoices
  */
+#[\AllowDynamicProperties]
 class ListInvoicesResponse implements JsonSerializable
 {
     /**
@@ -45,6 +46,7 @@ class ListInvoicesResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

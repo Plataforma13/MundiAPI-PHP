@@ -13,6 +13,7 @@ use JsonSerializable;
  *Request for creating a Setup for a subscription. The setup is an order that will be created at the
  * subscription creation.
  */
+#[\AllowDynamicProperties]
 class CreateSetupRequest implements JsonSerializable
 {
     /**
@@ -55,6 +56,7 @@ class CreateSetupRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

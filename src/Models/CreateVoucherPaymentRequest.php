@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *The settings for creating a voucher payment
  */
+#[\AllowDynamicProperties]
 class CreateVoucherPaymentRequest implements JsonSerializable
 {
     /**
@@ -63,6 +64,7 @@ class CreateVoucherPaymentRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

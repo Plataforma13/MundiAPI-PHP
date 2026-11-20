@@ -15,6 +15,7 @@ use JsonSerializable;
  * @discriminator transaction_type
  * @discriminatorType voucher
  */
+#[\AllowDynamicProperties]
 class GetVoucherTransactionResponse extends GetTransactionResponse implements JsonSerializable
 {
     /**
@@ -129,6 +130,7 @@ class GetVoucherTransactionResponse extends GetTransactionResponse implements Js
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

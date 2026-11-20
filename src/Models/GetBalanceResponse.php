@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Balance
  */
+#[\AllowDynamicProperties]
 class GetBalanceResponse implements JsonSerializable
 {
     /**
@@ -54,6 +55,7 @@ class GetBalanceResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

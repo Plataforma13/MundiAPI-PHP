@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Request to update the end date of the current subscription cycle
  */
+#[\AllowDynamicProperties]
 class UpdateCurrentCycleEndDateRequest implements JsonSerializable
 {
     /**
@@ -38,6 +39,7 @@ class UpdateCurrentCycleEndDateRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

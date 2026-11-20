@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Card data
  */
+#[\AllowDynamicProperties]
 class CreateCardRequest implements JsonSerializable
 {
     /**
@@ -181,6 +182,7 @@ class CreateCardRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

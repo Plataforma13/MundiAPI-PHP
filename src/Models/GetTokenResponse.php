@@ -13,6 +13,7 @@ use MundiAPILib\Utils\DateTimeHelper;
 /**
  *Token data
  */
+#[\AllowDynamicProperties]
 class GetTokenResponse implements JsonSerializable
 {
     /**
@@ -76,6 +77,7 @@ class GetTokenResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

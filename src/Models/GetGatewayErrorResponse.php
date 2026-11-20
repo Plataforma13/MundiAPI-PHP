@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Gateway Response
  */
+#[\AllowDynamicProperties]
 class GetGatewayErrorResponse implements JsonSerializable
 {
     /**
@@ -36,6 +37,7 @@ class GetGatewayErrorResponse implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();

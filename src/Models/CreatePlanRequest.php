@@ -12,6 +12,7 @@ use JsonSerializable;
 /**
  *Request for creating a plan
  */
+#[\AllowDynamicProperties]
 class CreatePlanRequest implements JsonSerializable
 {
     /**
@@ -194,6 +195,7 @@ class CreatePlanRequest implements JsonSerializable
     /**
      * Encode this object to JSON
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         $json = array();
